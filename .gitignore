@@ -1,0 +1,22 @@
+# Entorno virtual
+venv/
+env/
+.env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Datos crudos (el CSV pesa mucho, no se sube)
+data/raw/
+
+# Modelo binario (opcional, puedes subirlo si pesa poco)
+*.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
