@@ -12,9 +12,9 @@ y desplegar el modelo como API REST lista para producción.
 
 | Modelo | MAE | RMSE | R² |
 |---|---|---|---|
-| Random Forest ✅ | 10.0 | 13.72 | 0.15 |
-| Gradient Boosting | 13.0 | 16.51 | 0.10 |
-| Linear Regression | 15.0 | 18.70 | 0.00 |
+| Random Forest ✅ | 9.86 | 13.72 | 0.49 |
+| Gradient Boosting | 12.97 | 16.51 | 0.26 |
+| Linear Regression | 15.27 | 18.70 | 0.06 |
 
 **Insight clave:** Los audio features tienen baja correlación lineal con 
 la popularidad (max. loudness: +0.05). La popularidad depende en gran medida 
