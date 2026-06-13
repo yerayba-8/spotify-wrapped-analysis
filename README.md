@@ -33,19 +33,20 @@ captura relaciones no lineales con un error medio de 0.08 puntos sobre 100.
 
 ## 📁 Estructura del proyecto
 
-\`\`\`
+```text
 spotify-wrapped-analysis/
-├── data/raw/            → dataset de Kaggle (no incluido por tamaño)
+├── data/
+│   └── raw/                        # Dataset de Kaggle (no incluido por tamaño)
 ├── notebooks/
-│   ├── 01_EDA.ipynb     → análisis exploratorio y visualizaciones
-│   └── 02_modelo.ipynb  → entrenamiento, evaluación y comparativa
+│   ├── 01_EDA.ipynb                # Análisis exploratorio y visualizaciones
+│   └── 02_modelo.ipynb            # Entrenamiento, evaluación y comparativa
 ├── src/
-│   ├── main.py          → API FastAPI
-│   ├── model.pkl        → modelo entrenado
-│   └── label_encoder.pkl
-├── outputs/figures/     → gráficas generadas
-└── requirements.txt
-\`\`\`
+│   ├── main.py                     # API FastAPI
+│   ├── model.pkl                   # Modelo entrenado
+│   └── label_encoder.pkl           # Encoder guardado
+├── outputs/
+│   └── figures/                    # Gráficas generadas
+└── requirements.txt                # Dependencias del proyecto
 
 ## 🔍 Principales hallazgos del EDA
 
@@ -56,7 +57,7 @@ spotify-wrapped-analysis/
 
 ## ▶️ Cómo ejecutar la API localmente
 
-\`\`\`bash
+```bash
 # 1. Clonar el repositorio
 git clone https://github.com/yerayba-8/spotify-wrapped-analysis.git
 cd spotify-wrapped-analysis
@@ -70,11 +71,11 @@ uvicorn main:app --reload
 
 # 4. Documentación interactiva
 # Abrir http://127.0.0.1:8000/docs
-\`\`\`
+```
 
 ## 🧪 Ejemplo de predicción
 
-\`\`\`bash
+```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
      -H "Content-Type: application/json" \
      -d '{
@@ -84,16 +85,16 @@ curl -X POST "http://127.0.0.1:8000/predict" \
        "valence": 0.6, "tempo": 120.0,
        "explicit": 0, "genre": "pop"
      }'
-\`\`\`
+```
 
 **Respuesta:**
-\`\`\`json
+```json
 {
   "genre": "pop",
   "popularity": 65.2,
   "label": "📈 Popular"
 }
-\`\`\`
+```
 
 ## 📈 Visualizaciones generadas
 
