@@ -47,6 +47,7 @@ spotify-wrapped-analysis/
 ├── outputs/
 │   └── figures/                    # Gráficas generadas
 └── requirements.txt                # Dependencias del proyecto
+```
 
 ## 🔍 Principales hallazgos del EDA
 
