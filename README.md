@@ -54,6 +54,7 @@ spotify-wrapped-analysis/
 - **Correlación energy-acousticness:** -0.73 (canciones energéticas son poco acústicas)
 - **Correlación energy-loudness:** +0.76 (más energía = más volumen)
 - **Danceability-valence:** +0.48 (canciones bailables tienden a ser más alegres)
+```
 
 ## ▶️ Cómo ejecutar la API localmente
 
@@ -75,7 +76,7 @@ uvicorn main:app --reload
 
 ## 🧪 Ejemplo de predicción
 
-```bash
+```json
 curl -X POST "http://127.0.0.1:8000/predict" \
      -H "Content-Type: application/json" \
      -d '{
