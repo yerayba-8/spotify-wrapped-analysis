@@ -109,6 +109,17 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 | `real_vs_predicted.png` | Valores reales vs predichos |
 | `error_distribution.png` | Distribución del error |
 
+## 📊 Dashboard Power BI
+
+Dashboard interactivo de 3 páginas construido sobre las tablas 
+analíticas generadas por el pipeline dbt.
+
+- Visión general: KPIs, top artistas y géneros
+- Audio Features: danceability y energía por género  
+- Correlaciones: por qué el sonido no determina la popularidad
+
+![Dashboard](outputs/figures/dashboard_vision_general.png)
+
 ## 👤 Autor
 
 **Yeray Bueno De Arriba**  
