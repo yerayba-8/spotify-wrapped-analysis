@@ -118,7 +118,7 @@ analíticas generadas por el pipeline dbt.
 - Audio Features: danceability y energía por género  
 - Correlaciones: por qué el sonido no determina la popularidad
 
-![Dashboard](outputs/figures/dashboard_vision_general.png)
+![Dashboard](outputs/figures/vision_general.png)
 
 ## 👤 Autor
 
